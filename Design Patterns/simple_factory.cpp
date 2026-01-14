@@ -5,18 +5,15 @@ class Car {
     /*private constructors and a factory as a friend is my
     way of saying: "DON'T INSTANTIATE THIS CLASS DIRECTLY"*/
     friend class VehicleFactory;
-    private:
-        string brand;
-        string model;
-        int price;
-        Car() {
-
-        }
-        Car(string nbrand, string nmodel, int nprice) {
-            brand = nbrand;
-            model = nmodel;
-            price = nprice;
-        }
+    string brand;
+    string model;
+    int price;
+    Car() {}
+    Car(string nbrand, string nmodel, int nprice) {
+        brand = nbrand;
+        model = nmodel;
+        price = nprice;
+    }
     public:
         string toString() {
             return "brand: " + brand + "\nmodel: " + model + "\nprice: " + to_string(price) + '\n';
