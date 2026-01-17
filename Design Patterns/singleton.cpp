@@ -36,7 +36,8 @@ namespace Person {
 int main() {
 
     // Person a; // This doesn't works, as it's uninstantiable;
-    // Thus only one class can be instantiated, making it a singleton
+    // Thus "only one class can be instantiated" (VIRTUALLY, obviously),
+    // making it a singleton.
     // But all of this right there works, like as if it was instantiated
     // since its own declaration -- just like Java's static classes
     Person::setAge(17);
